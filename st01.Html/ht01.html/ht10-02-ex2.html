@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+    p          { text-align: center; }
+    h2         { text-align: center; }
+    header     { height: 60px; }
+    nav        { width: 30%; float: left; }
+    article    { width: 30%; float: left; }
+    aside      { width: 30%; float: left; }
+    footer     { height: 60px; clear: both; }
+
+    nav, article, aside { height: 300px; }
+    section             { height: 50px; }
+
+    /*배경색 지정*/
+    header     { background-color: #78d0d1; }
+    nav        { background-color: #fff600; }
+    article    { background-color: #96EA54; }
+    aside      { background-color: #FFCD63; }
+    footer     { background-color: #78d0d1; }
+
+    /*여백주기*/
+    header     { margin: 0 0 20px 0; }
+    nav        { margin: 0 0 20px 0; }
+    article    { margin: 0 5% 0 5%; }
+    aside      { margin: 0 0 20px 0; }
+    footer     { margin: 0; }
+    article > section { margin: 20px; }
+    aside > section   { margin: 20px; }
+
+    /* > 태그는 자식 선택자 [ex) article 안에 section] */
+    article > section { background-color: #FF7AD2; }
+    aside > section   { background-color: #FF6C18; }
+
+</style>
+</head>
+<body>
+    <header>
+        <h2>Header</h2>
+    </header>
+
+    <div id="wrapbody">
+        <nav>
+            <h2>Nav</h2>
+            <p>header</p>
+        </nav>
+    </div>
+
+    <article>
+        <h2>Article</h2>
+        <p>header</p>
+        <section>
+            <p>section</p>
+        </section>
+
+        <section>
+            <p>section</p>
+        </section>
+        <p>footer</p>
+    </article>
+
+    <aside>
+        <h2>Aside</h2>
+        <section>
+            <p>section</p>
+        </section>
+        <section>
+            <p>section</p>
+        </section>
+        <section>
+            <p>section</p>
+        </section>
+    </aside>
+
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+
+</body>
